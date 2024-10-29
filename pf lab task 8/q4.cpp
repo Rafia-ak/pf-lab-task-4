@@ -33,7 +33,7 @@ int main(){
 	
 	int sum[m1][n1];
 			
-	if (m1!=n1 || m2!=n2){
+	if (m1!=m2 || n1!=n2){
 		printf("The matrices have different dimensions and hence cannot be added.");
 		return 0;
 	}
