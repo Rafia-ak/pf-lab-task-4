@@ -67,6 +67,7 @@ int main() {
 
             if (option == 1) {
                 scanf("%d %d", &value, &pos);
+                pos--;
                 if (pos < 0 || pos > size) {
                     printf("Invalid position\n");
                 } else {
@@ -74,12 +75,13 @@ int main() {
                 }
             } else if (option == 2) {
                 scanf("%d", &pos);
+                pos--;
                 if (pos < 0 || pos >= size) {
                     printf("Invalid position\n");
                 } else {
                     deleteElement(&arr, &size, pos);
                 }
-            }
+}
 
             display(arr, size);
         }
